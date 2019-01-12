@@ -1,6 +1,8 @@
 #include <stdio.h>
-
+#include "function.h"
 int main() {
-    printf("Hello, World!\n");
-    return 0;
+    stackArray s=createStackArray(10);
+    pushStackArray(1,s);
+    freeStackArray(s);
+    printf("%d",lengthStackArray(s));
 }
